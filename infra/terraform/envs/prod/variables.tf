@@ -1,9 +1,13 @@
+variable "region" {
+  default = "us-east-1"
+}
+
 variable "name" {
-  type = string
+  default = "snapshot-cleanup-prod"
 }
 
 variable "lambda_zip" {
-  type = string
+  default = "../../../lambda.zip"
 }
 
 variable "retention_days" {
